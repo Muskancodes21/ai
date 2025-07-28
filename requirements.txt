@@ -1,0 +1,25 @@
+# Core LangChain dependencies
+langchain>=0.1.0
+langchain-community>=0.0.10
+
+# Document processing libraries
+unstructured[all-docs]>=0.10.0
+pypdf>=3.0.0
+python-docx>=0.8.11
+python-pptx>=0.6.21
+
+# Embeddings and vector store
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+to
+transformers>=4rch>=2.0.0.30.0
+
+# Additional dependencies for document processing
+pillow>=9.0.0
+opencv-python>=4.5.0
+pytesseract>=0.3.10
+pdf2image>=1.16.0
+
+# Utility libraries
+pathlib2>=2.3.7
+typing-extensions>=4.0.0
