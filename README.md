@@ -51,3 +51,61 @@ The solution uses a local RAG architecture to transform raw data into a searchab
 ```bash
 git clone [https://github.com/yourusername/presales-assistant.git](https://github.com/yourusername/presales-assistant.git)
 cd presales-assistant
+
+### 2. Install Dependencies
+Bash
+
+pip install -r requirements.txt
+
+Key dependencies include langchain-community, faiss-cpu, sentence-transformers, pypdf, python-docx, and python-pptx .
+
+3. Configuration
+Ensure your raw documents are placed in the dataset folder. You may need to update the folder_path variable in ingest.py to point to your data directory.
+
+💻 Usage
+Step 1: Ingest Data (Build the Brain)
+Run the ingestion process to read your documents and create the FAISS vector index.
+
+Bash
+
+# Ensure the main() function calls loader.load_documents() and create_vector_store()
+python ingest.py 
+
+This loads documents, splits them, and saves the multi_format_faiss_index locally .
+
+Step 2: Chat with Your Data
+Once the index is built, launch the assistant to start querying.
+
+Bash
+
+python app.py
+
+Launches the CLI loop to answer questions based on the ingested data .
+
+📸 Features
+Smart Retrieval with Citations
+The system doesn't just answer; it tells you where it found the answer.
+
+Input: "What were the security compliance requirements in the Q3 proposal?"
+
+
+Output: Generates a summary and lists the source filenames used for the answer.
+
+
+Response Cleaning
+Includes a post-processing layer to strip chain-of-thought artifacts (e.g., "Let me think...", "Sure, here is the answer") ensuring a clean, professional output .
+
+🔮 Future Roadmap
+SharePoint API Integration: Automate the ingestion directly from live SharePoint folders rather than local directories.
+
+
+Streamlit UI: Migrate the current CLI backend into a full web interface for non-technical users.
+
+Hybrid Search: Implement keyword search alongside semantic search for better precision on acronyms.
+
+👨‍💻 Author
+[Your Name] Final Year Student @ BITS Pilani | Intern @ C5i
+
+LinkedIn: [Your Profile Link]
+
+Email: [Your Email]
