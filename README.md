@@ -131,19 +131,16 @@ Includes a post-processing layer to strip chain-of-thought artifacts (e.g., "Let
 
 ## 👨‍💻 Author
 
-**[Your Name]**  
+**Muskan Verma**  
 Final Year Student @ BITS Pilani | Intern @ C5i
 
-- **LinkedIn:** [Your Profile Link]
-- **Email:** [Your Email]
+- **LinkedIn:** https://www.linkedin.com/in/muskan-verma-37377b278/
+- **Email:** Muskan21234@gmail.com
 
 ---
 
-## 📄 License
 
-[Add your license here]
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This project was developed as part of an internship at C5i to address real-world challenges faced by Presales teams in managing large document repositories.
 
