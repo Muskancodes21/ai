@@ -50,7 +50,7 @@ The solution uses a local RAG architecture to transform raw data into a searchab
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/yourusername/presales-assistant.git](https://github.com/yourusername/presales-assistant.git)
-cd presales-assistant
+cd presales-assistant`
 
 ### 2. Install Dependencies
 Bash
